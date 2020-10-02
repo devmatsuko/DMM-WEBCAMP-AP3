@@ -19,7 +19,8 @@
 					<th>Title</th>
 					<th>Opinion</th>
 					<th>Good</th>
-					<th colspan="2"></th>
+					<th>Comment</th>
+					<th colspan="1"></th>
 				</tr>
 			</thead>
 
@@ -48,6 +49,10 @@
 						  <% end %>
 						</td>
 					<% end %>
+					<td>
+					  <i class="fa fa-comment"></i>
+					  コメント数：<%= book.book_comments.count %>
+					</td>
 				</tr>
 				<% end %>
 			</tbody>
